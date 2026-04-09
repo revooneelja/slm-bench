@@ -1,0 +1,69 @@
+model,task,ttft_p50_ms,ttft_p99_ms,total_p50_ms,tps_mean,tps_stdev,sample_output
+llama3.2:3b,summarisation,2245.2,2263.3,9444.8,13.2,0.11,"Here are three bullet points summarizing the news article:
+
+• The Reserve Bank of India (RBI) has kept its benchmark interest rate steady at 6.5% for the fourth consecutive meeting, pausing its rate-hiking cycle.
+• Despite inflation remaining above target, the RBI described it as showing signs of ea…"
+llama3.2:3b,code_generation,2264.4,2288.5,20700.2,14.7,0.36,"```python
+import pandas as pd
+
+def get_top_rows(csv_file: str, column: str, n: int) -> list[dict]:
+    """"""
+    Reads a CSV file and returns the top-N rows sorted by a given column in descending order.
+
+    Args:
+        csv_file (str): Path to the CSV file.
+        column (str): Name of the column t…"
+llama3.2:3b,qa_factual,2251.9,2277.3,9042.7,13.6,0.76,"RAM (Random Access Memory) refers to the computer's main memory for storing data temporarily while it's being processed. 
+
+VRAM (Video Random Access Memory) specifically refers to a dedicated memory type used by graphics processing units (GPUs). In the context of large language models, VRAM is cruci…"
+llama3.2:3b,creative_writing,2256.0,2274.8,8277.1,12.9,0.17,"""Code in peace, no distractions required! Our noise-cancelling headphones are designed specifically for remote workers like you - no more background chatter, meetings to interrupt, or pesky family members trying to 'help' with your coding. With industry-leading noise cancellation and crystal-clear a…"
+llama3.2:3b,reasoning,2265.4,2275.3,26840.3,15.6,0.09,"To solve this problem, we'll use the concept of relative speed and distance.
+
+Let's break down the situation:
+
+1. Train A (Mumbai to Pune):
+- Leaves Mumbai at 08:00
+- Travels at 90 km/h
+2. Train B (Pune to Mumbai):
+- Leaves Pune at 08:30
+- Travels at 110 km/h
+
+We'll calculate the time it takes for t…"
+phi3:mini,summarisation,2132.8,2161.6,12824.1,13.2,0.26,"- The Reserve Bank of India kept its benchmark interest rate at 6.5% for the fourth consecutive meeting due to persistently high inflation, though it is showing signs of easing below the targeted range; Governor Shaktikanta Das emphasized maintaining a 'withdrawal of accommodation' stance without an…"
+phi3:mini,code_generation,2143.1,2161.6,21556.1,13.8,0.85,"```python
+
+from typing import List
+
+import csv
+
+
+def read_top_n_rows(file_path: str, sort_by: str, n: int = 10) -> List[dict]:
+
+    """"""Read the first N rows of a CSV file and return them sorted by specified column.
+
+
+    Arnerts function to extract top-N entries from provided csv as per given sortin…"
+phi3:mini,qa_factual,2135.0,2144.4,16539.4,13.2,1.38,"1. **Differences**: RAM (Random Access Memory) temporarily stores data that a computer needs to access quickly while performing tasks; it's fast but volatile memory with limited capacity for video and audio processing speeds required by modern computers. VRAM, or Video Random Access Memory (also kno…"
+phi3:mini,creative_writing,2157.7,1641986.1,14395.6,11.1,6.18,"Hear the silence amidst chaos with our NoisOpal Headphones! Designed to keep you focused while working remotely as a developer, these earbuds boast impeccable noise-cancellation tailored for your coding sanctuary at home or in coffee shops. Buzzing background chatter and blaring notifications dissol…"
+phi3:mini,reasoning,2151.9,4670.1,68388.9,12.2,2.76,"A toy shop in Mumbai operates within a complex network of underground railways that operate on the same tracks as Metro Railways Ltd., which transports water bottles through four intermediate stops (Station A -> B, C, D, and E) along its route at fixed intervals. These stations are connected by trai…"
+mistral:7b,summarisation,2210.7,2226.7,22587.1,7.3,0.05,"1. The Reserve Bank of India maintained its benchmark interest rate at 6.5% for the fourth consecutive meeting, as inflation showed signs of easing but remained above the target of 4%.
+
+2. Governor Shaktikanta Das announced that the Monetary Policy Committee voted 5-1 to keep rates unchanged and con…"
+mistral:7b,code_generation,2201.0,2216.6,41451.6,7.6,0.24,"Here's a Python function that reads a CSV file, sorts the top-N rows by a given column in descending order, and returns the sorted list. The function uses the `pandas` library for ease of handling CSV files.
+
+```python
+import pandas as pd
+
+def read_csv_top_n(filepath: str, n: int, column: str) -> Li…"
+mistral:7b,qa_factual,2215.3,2248.1,33110.9,6.9,0.36,"RAM (Random Access Memory) and VRAM (Video Random Access Memory) serve different purposes in a computer system.
+
+1. RAM: It's the primary memory of a computer, used for storing data that the CPU currently uses. It is shared among all processes and applications running on the system.
+
+2. VRAM (or GPU…"
+mistral:7b,creative_writing,2217.1,2224.2,19659.8,7.2,0.32,"Introducing the Sonic Sanctuary HQ300 - your ultimate coding companion! Engineered for software maestros who prefer peace and precision in their digital domain. The HQ300's state-of-the-art Active Noise Cancellation ensures that every 'compile', 'commit', or 'push' doesn't have to compete with house…"
+mistral:7b,reasoning,2207.7,2227.4,47353.6,7.7,0.05,"Let's break this down:
+
+1. The first train travels a distance of 150 km at a constant speed of 90 km/h. To find out when it will reach Pune, we use the formula Time = Distance / Speed:
+   Time_1 = Distance / Speed_1 = 150 km / 90 km/h = 1.67 hours (approximately)
+
+2. The second train starts 30 minut…"

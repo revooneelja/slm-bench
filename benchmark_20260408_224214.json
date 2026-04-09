@@ -1,0 +1,152 @@
+[
+  {
+    "model": "llama3.2:3b",
+    "task": "summarisation",
+    "ttft_p50_ms": 2245.2,
+    "ttft_p99_ms": 2263.3,
+    "total_p50_ms": 9444.8,
+    "tps_mean": 13.2,
+    "tps_stdev": 0.11,
+    "sample_output": "Here are three bullet points summarizing the news article:\n\n• The Reserve Bank of India (RBI) has kept its benchmark interest rate steady at 6.5% for the fourth consecutive meeting, pausing its rate-hiking cycle.\n• Despite inflation remaining above target, the RBI described it as showing signs of ea…"
+  },
+  {
+    "model": "llama3.2:3b",
+    "task": "code_generation",
+    "ttft_p50_ms": 2264.4,
+    "ttft_p99_ms": 2288.5,
+    "total_p50_ms": 20700.2,
+    "tps_mean": 14.7,
+    "tps_stdev": 0.36,
+    "sample_output": "```python\nimport pandas as pd\n\ndef get_top_rows(csv_file: str, column: str, n: int) -> list[dict]:\n    \"\"\"\n    Reads a CSV file and returns the top-N rows sorted by a given column in descending order.\n\n    Args:\n        csv_file (str): Path to the CSV file.\n        column (str): Name of the column t…"
+  },
+  {
+    "model": "llama3.2:3b",
+    "task": "qa_factual",
+    "ttft_p50_ms": 2251.9,
+    "ttft_p99_ms": 2277.3,
+    "total_p50_ms": 9042.7,
+    "tps_mean": 13.6,
+    "tps_stdev": 0.76,
+    "sample_output": "RAM (Random Access Memory) refers to the computer's main memory for storing data temporarily while it's being processed. \n\nVRAM (Video Random Access Memory) specifically refers to a dedicated memory type used by graphics processing units (GPUs). In the context of large language models, VRAM is cruci…"
+  },
+  {
+    "model": "llama3.2:3b",
+    "task": "creative_writing",
+    "ttft_p50_ms": 2256.0,
+    "ttft_p99_ms": 2274.8,
+    "total_p50_ms": 8277.1,
+    "tps_mean": 12.9,
+    "tps_stdev": 0.17,
+    "sample_output": "\"Code in peace, no distractions required! Our noise-cancelling headphones are designed specifically for remote workers like you - no more background chatter, meetings to interrupt, or pesky family members trying to 'help' with your coding. With industry-leading noise cancellation and crystal-clear a…"
+  },
+  {
+    "model": "llama3.2:3b",
+    "task": "reasoning",
+    "ttft_p50_ms": 2265.4,
+    "ttft_p99_ms": 2275.3,
+    "total_p50_ms": 26840.3,
+    "tps_mean": 15.6,
+    "tps_stdev": 0.09,
+    "sample_output": "To solve this problem, we'll use the concept of relative speed and distance.\n\nLet's break down the situation:\n\n1. Train A (Mumbai to Pune):\n- Leaves Mumbai at 08:00\n- Travels at 90 km/h\n2. Train B (Pune to Mumbai):\n- Leaves Pune at 08:30\n- Travels at 110 km/h\n\nWe'll calculate the time it takes for t…"
+  },
+  {
+    "model": "phi3:mini",
+    "task": "summarisation",
+    "ttft_p50_ms": 2132.8,
+    "ttft_p99_ms": 2161.6,
+    "total_p50_ms": 12824.1,
+    "tps_mean": 13.2,
+    "tps_stdev": 0.26,
+    "sample_output": "- The Reserve Bank of India kept its benchmark interest rate at 6.5% for the fourth consecutive meeting due to persistently high inflation, though it is showing signs of easing below the targeted range; Governor Shaktikanta Das emphasized maintaining a 'withdrawal of accommodation' stance without an…"
+  },
+  {
+    "model": "phi3:mini",
+    "task": "code_generation",
+    "ttft_p50_ms": 2143.1,
+    "ttft_p99_ms": 2161.6,
+    "total_p50_ms": 21556.1,
+    "tps_mean": 13.8,
+    "tps_stdev": 0.85,
+    "sample_output": "```python\n\nfrom typing import List\n\nimport csv\n\n\ndef read_top_n_rows(file_path: str, sort_by: str, n: int = 10) -> List[dict]:\n\n    \"\"\"Read the first N rows of a CSV file and return them sorted by specified column.\n\n\n    Arnerts function to extract top-N entries from provided csv as per given sortin…"
+  },
+  {
+    "model": "phi3:mini",
+    "task": "qa_factual",
+    "ttft_p50_ms": 2135.0,
+    "ttft_p99_ms": 2144.4,
+    "total_p50_ms": 16539.4,
+    "tps_mean": 13.2,
+    "tps_stdev": 1.38,
+    "sample_output": "1. **Differences**: RAM (Random Access Memory) temporarily stores data that a computer needs to access quickly while performing tasks; it's fast but volatile memory with limited capacity for video and audio processing speeds required by modern computers. VRAM, or Video Random Access Memory (also kno…"
+  },
+  {
+    "model": "phi3:mini",
+    "task": "creative_writing",
+    "ttft_p50_ms": 2157.7,
+    "ttft_p99_ms": 1641986.1,
+    "total_p50_ms": 14395.6,
+    "tps_mean": 11.1,
+    "tps_stdev": 6.18,
+    "sample_output": "Hear the silence amidst chaos with our NoisOpal Headphones! Designed to keep you focused while working remotely as a developer, these earbuds boast impeccable noise-cancellation tailored for your coding sanctuary at home or in coffee shops. Buzzing background chatter and blaring notifications dissol…"
+  },
+  {
+    "model": "phi3:mini",
+    "task": "reasoning",
+    "ttft_p50_ms": 2151.9,
+    "ttft_p99_ms": 4670.1,
+    "total_p50_ms": 68388.9,
+    "tps_mean": 12.2,
+    "tps_stdev": 2.76,
+    "sample_output": "A toy shop in Mumbai operates within a complex network of underground railways that operate on the same tracks as Metro Railways Ltd., which transports water bottles through four intermediate stops (Station A -> B, C, D, and E) along its route at fixed intervals. These stations are connected by trai…"
+  },
+  {
+    "model": "mistral:7b",
+    "task": "summarisation",
+    "ttft_p50_ms": 2210.7,
+    "ttft_p99_ms": 2226.7,
+    "total_p50_ms": 22587.1,
+    "tps_mean": 7.3,
+    "tps_stdev": 0.05,
+    "sample_output": "1. The Reserve Bank of India maintained its benchmark interest rate at 6.5% for the fourth consecutive meeting, as inflation showed signs of easing but remained above the target of 4%.\n\n2. Governor Shaktikanta Das announced that the Monetary Policy Committee voted 5-1 to keep rates unchanged and con…"
+  },
+  {
+    "model": "mistral:7b",
+    "task": "code_generation",
+    "ttft_p50_ms": 2201.0,
+    "ttft_p99_ms": 2216.6,
+    "total_p50_ms": 41451.6,
+    "tps_mean": 7.6,
+    "tps_stdev": 0.24,
+    "sample_output": "Here's a Python function that reads a CSV file, sorts the top-N rows by a given column in descending order, and returns the sorted list. The function uses the `pandas` library for ease of handling CSV files.\n\n```python\nimport pandas as pd\n\ndef read_csv_top_n(filepath: str, n: int, column: str) -> Li…"
+  },
+  {
+    "model": "mistral:7b",
+    "task": "qa_factual",
+    "ttft_p50_ms": 2215.3,
+    "ttft_p99_ms": 2248.1,
+    "total_p50_ms": 33110.9,
+    "tps_mean": 6.9,
+    "tps_stdev": 0.36,
+    "sample_output": "RAM (Random Access Memory) and VRAM (Video Random Access Memory) serve different purposes in a computer system.\n\n1. RAM: It's the primary memory of a computer, used for storing data that the CPU currently uses. It is shared among all processes and applications running on the system.\n\n2. VRAM (or GPU…"
+  },
+  {
+    "model": "mistral:7b",
+    "task": "creative_writing",
+    "ttft_p50_ms": 2217.1,
+    "ttft_p99_ms": 2224.2,
+    "total_p50_ms": 19659.8,
+    "tps_mean": 7.2,
+    "tps_stdev": 0.32,
+    "sample_output": "Introducing the Sonic Sanctuary HQ300 - your ultimate coding companion! Engineered for software maestros who prefer peace and precision in their digital domain. The HQ300's state-of-the-art Active Noise Cancellation ensures that every 'compile', 'commit', or 'push' doesn't have to compete with house…"
+  },
+  {
+    "model": "mistral:7b",
+    "task": "reasoning",
+    "ttft_p50_ms": 2207.7,
+    "ttft_p99_ms": 2227.4,
+    "total_p50_ms": 47353.6,
+    "tps_mean": 7.7,
+    "tps_stdev": 0.05,
+    "sample_output": "Let's break this down:\n\n1. The first train travels a distance of 150 km at a constant speed of 90 km/h. To find out when it will reach Pune, we use the formula Time = Distance / Speed:\n   Time_1 = Distance / Speed_1 = 150 km / 90 km/h = 1.67 hours (approximately)\n\n2. The second train starts 30 minut…"
+  }
+]
